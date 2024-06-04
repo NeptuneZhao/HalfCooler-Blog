@@ -20,7 +20,10 @@ export default defineValaxyConfig<UserThemeConfig>({
         enable: true,
       },
     },
-
+    bg_image: {
+      enable: true,
+      url: '/public/bg.png'
+    },
     notice: {
       enable: true,
       content: '欢迎来到大半凉的小站, 这里是一个记录生活、分享技术的地方。',
