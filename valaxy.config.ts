@@ -4,6 +4,7 @@ import type { UserThemeConfig } from 'valaxy-theme-yun'
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
+  'i-mdi-minecraft'
 ]
 
 /**
@@ -22,12 +23,13 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     bg_image: {
       enable: true,
-      url: '/public/bg.png'
+      url: new URL('./src/bg.png', import.meta.url).href,
+      opacity: 0.5
     },
     notice: {
       enable: true,
       content: '欢迎来到大半凉的小站, 这里是一个记录生活、分享技术的地方。',
-      hideInPages: false,
+      hideInPages: true,
     },
     fireworks: {
       enable: true,

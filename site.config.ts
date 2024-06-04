@@ -36,14 +36,20 @@ export default defineSiteConfig({
       link: '/goldsaying/',
       icon: 'i-ri-android-line',
       color: '#FFF00F'
+    },
+    {
+      name: '我的MC服务器',
+      link: '/mc/',
+      icon: 'i-mdi-minecraft',
+      color: '#44D52C'
     }
   ],
   statistics: {
     enable: true,
     readTime: {
       speed: {
-        cn: 270,
-        en: 180
+        cn: 243,
+        en: 162
       }
     }
   },
