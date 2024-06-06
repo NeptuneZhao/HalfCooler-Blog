@@ -1,5 +1,6 @@
 import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
+import {addonWaline} from 'valaxy-addon-waline'
 
 // add icons what you will need
 const safelist = [
@@ -11,7 +12,24 @@ const safelist = [
  * User Config
  */
 export default defineValaxyConfig<UserThemeConfig>({
-
+  siteConfig: {
+    comment: {
+      enable: true
+    }
+  },
+  addons: [
+    addonWaline({
+      serverURL: 'https://waline.vercel.app',
+      emoji: true,
+      dark: true,
+      pageSize: 10,
+      lang: 'zh',
+      requiredMeta: [],
+      login: 'enable',
+      imageUploader: true,
+      reaction: true
+    })
+  ],
   theme: 'yun',
   themeConfig: {
     banner: {
@@ -23,19 +41,19 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     bg_image: {
       enable: true,
-      url: '/bg/bg.png',
+      url: 'https://github.com/NeptuneZhao/HalfCooler-Blog/blob/new/bg/index.png?raw=true',
+      dark: 'https://github.com/NeptuneZhao/HalfCooler-Blog/blob/new/bg/index_night.png?raw=true',
       opacity: 0.5
     },
     notice: {
       enable: true,
-      content: '欢迎来到大半凉的小站, 这里是一个记录生活、分享技术的地方。',
+      content: '欢迎来访, 大半凉的小站是一个记录生活、分享技术的地方。',
       hideInPages: true,
     },
     fireworks: {
       enable: true,
-      colors: ['#12D1D6', '#3E83E1', '#3F48CC', '#0CD67D', '#67E30A']
+      colors: ['#EDE5ED', '#D6DDED', '#F9E8E4', '#C0C8E7', '#EEE6E9']
     },
-
     pages: [
       {
         name: '我的小伙伴们',
