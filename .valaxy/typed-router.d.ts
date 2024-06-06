@@ -42,6 +42,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/2024052201': RouteRecordInfo<'/posts/2024052201', '/posts/2024052201', Record<never, never>, Record<never, never>>,
     '/posts/2024052901': RouteRecordInfo<'/posts/2024052901', '/posts/2024052901', Record<never, never>, Record<never, never>>,
     '/posts/2024060301': RouteRecordInfo<'/posts/2024060301', '/posts/2024060301', Record<never, never>, Record<never, never>>,
+    '/posts/2024060401': RouteRecordInfo<'/posts/2024060401', '/posts/2024060401', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
