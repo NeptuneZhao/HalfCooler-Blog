@@ -23,7 +23,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     bg_image: {
       enable: true,
-      url: new URL('./src/bg.png', import.meta.url).href,
+      url: '/bg/bg.png',
       opacity: 0.5
     },
     notice: {
