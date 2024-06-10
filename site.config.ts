@@ -7,7 +7,7 @@ export default defineSiteConfig({
   author: {
     name: '大半凉',
     email: 'qq1836143240@outlook.com',
-    avatar: 'https://github.com/NeptuneZhao/NeptuneZhao/blob/main/skadi.jpg?raw=true',
+    avatar: 'skadi.jpg',
     status: {
       emoji: '🌈',
       message: '嘿！你丫瞅什么呢？是我，你爹！',

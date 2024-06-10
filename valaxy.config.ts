@@ -41,8 +41,8 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     bg_image: {
       enable: true,
-      url: 'https://github.com/NeptuneZhao/HalfCooler-Blog/blob/new/bg/index.png?raw=true',
-      dark: 'https://github.com/NeptuneZhao/HalfCooler-Blog/blob/new/bg/index_night.png?raw=true',
+      url: 'index.png',
+      dark: 'index_night.png',
       opacity: 0.5
     },
     notice: {
